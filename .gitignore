@@ -1,0 +1,51 @@
+# Build outputs
+Builds/VisualStudio2022/.vs/
+Builds/VisualStudio2022/x64/
+Builds/LinuxMakefile/build/
+Builds/*/bin/
+Builds/*/obj/
+
+# Visual Studio files
+*.vcxproj.user
+*.suo
+*.sdf
+*.opensdf
+*.db
+*.ipch
+*.aps
+*.pch
+*.pdb
+*.ilk
+*.meta
+*.obj
+*.iobj
+*.pch
+*.tlog
+*.log
+*.lib
+*.exe
+*.dll
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vs/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp
+
+# JuceLibraryCode binaries (keep source)
+JuceLibraryCode/*.a
+JuceLibraryCode/*.lib
