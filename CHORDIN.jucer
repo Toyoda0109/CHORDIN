@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="XN2GWx" name="CHORDIN" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1" companyName="muzicA">
+  <MAINGROUP id="wdjKWz" name="CHORDIN">
+    <GROUP id="{51630DD9-2CFB-6580-8001-5B63D88BDBE0}" name="Source">
+      <GROUP id="{AudioProcessor}" name="AudioProcessor">
+        <FILE id="XgNsjh" name="PluginProcessor.cpp" compile="1" resource="0"
+              file="CHORDIN/Source/AudioProcessor/PluginProcessor.cpp"/>
+        <FILE id="C218Qs" name="PluginProcessor.h" compile="0" resource="0"
+              file="CHORDIN/Source/AudioProcessor/PluginProcessor.h"/>
+      </GROUP>
+      <GROUP id="{Editor}" name="Editor">
+        <FILE id="AICEmv" name="PluginEditor.cpp" compile="1" resource="0"
+              file="CHORDIN/Source/Editor/PluginEditor.cpp"/>
+        <FILE id="CeQtuV" name="PluginEditor.h" compile="0" resource="0" 
+              file="CHORDIN/Source/Editor/PluginEditor.h"/>
+      </GROUP>
+      <GROUP id="{Chord}" name="Chord">
+        <FILE id="ChordDef1" name="ChordDefinitions.cpp" compile="1" resource="0"
+              file="CHORDIN/Source/Chord/ChordDefinitions.cpp"/>
+        <FILE id="ChordDef2" name="ChordDefinitions.h" compile="0" resource="0"
+              file="CHORDIN/Source/Chord/ChordDefinitions.h"/>
+        <FILE id="ChordSel1" name="ChordSelector.cpp" compile="1" resource="0"
+              file="CHORDIN/Source/Chord/ChordSelector.cpp"/>
+        <FILE id="ChordSel2" name="ChordSelector.h" compile="0" resource="0"
+              file="CHORDIN/Source/Chord/ChordSelector.h"/>
+        <FILE id="ChordPri1" name="ChordPriorities.cpp" compile="1" resource="0"
+              file="CHORDIN/Source/Chord/ChordPriorities.cpp"/>
+        <FILE id="ChordPri2" name="ChordPriorities.h" compile="0" resource="0"
+              file="CHORDIN/Source/Chord/ChordPriorities.h"/>
+        <FILE id="ChordName1" name="ChordNameUpdater.cpp" compile="1" resource="0"
+              file="CHORDIN/Source/Chord/ChordNameUpdater.cpp"/>
+        <FILE id="ChordName2" name="ChordNameUpdater.h" compile="0" resource="0"
+              file="CHORDIN/Source/Chord/ChordNameUpdater.h"/>
+        <FILE id="ChordChk1" name="ChordCheckerInitializer.cpp" compile="1" resource="0"
+              file="CHORDIN/Source/Chord/ChordCheckerInitializer.cpp"/>
+        <FILE id="ChordChk2" name="ChordCheckerInitializer.h" compile="0" resource="0"
+              file="CHORDIN/Source/Chord/ChordCheckerInitializer.h"/>
+      </GROUP>
+      <GROUP id="{Handler}" name="Handler">
+        <FILE id="MidiHand1" name="MidiHandler.cpp" compile="1" resource="0"
+              file="CHORDIN/Source/Handler/MidiHandler.cpp"/>
+        <FILE id="MidiHand2" name="MidiHandler.h" compile="0" resource="0"
+              file="CHORDIN/Source/Handler/MidiHandler.h"/>
+        <FILE id="MidiProc1" name="MidiProcessor.cpp" compile="1" resource="0"
+              file="CHORDIN/Source/Handler/MidiProcessor.cpp"/>
+        <FILE id="MidiProc2" name="MidiProcessor.h" compile="0" resource="0"
+              file="CHORDIN/Source/Handler/MidiProcessor.h"/>
+        <FILE id="ScaleHand1" name="ScaleHandler.cpp" compile="1" resource="0"
+              file="CHORDIN/Source/Handler/ScaleHandler.cpp"/>
+        <FILE id="ScaleHand2" name="ScaleHandler.h" compile="0" resource="0"
+              file="CHORDIN/Source/Handler/ScaleHandler.h"/>
+      </GROUP>
+      <GROUP id="{Matchers}" name="Matchers">
+        <FILE id="ChordMatch1" name="ChordMatcher.cpp" compile="1" resource="0"
+              file="CHORDIN/Source/Matchers/ChordMatcher.cpp"/>
+        <FILE id="ChordMatch2" name="ChordMatcher.h" compile="0" resource="0"
+              file="CHORDIN/Source/Matchers/ChordMatcher.h"/>
+      </GROUP>
+    </GROUP>
+    <GROUP id="{Resources}" name="ReSorce">
+      <FILE id="Font1" name="Cornerstone.ttf" compile="0" resource="1"
+            file="CHORDIN/ReSorce/Cornerstone.ttf"/>
+      <FILE id="Image1" name="gear.png" compile="0" resource="1"
+            file="CHORDIN/ReSorce/gear.png"/>
+    </GROUP>
+  </MAINGROUP>
+  <MODULES>
+    <MODULE id="juce_animation" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <VS2022 targetFolder="Builds/VisualStudio2022">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="CHORDIN"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="CHORDIN"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_animation" path=""/>
+        <MODULEPATH id="juce_audio_basics" path=""/>
+        <MODULEPATH id="juce_audio_devices" path=""/>
+        <MODULEPATH id="juce_audio_formats" path=""/>
+        <MODULEPATH id="juce_audio_plugin_client" path=""/>
+        <MODULEPATH id="juce_audio_processors" path=""/>
+        <MODULEPATH id="juce_audio_utils" path=""/>
+        <MODULEPATH id="juce_core" path=""/>
+        <MODULEPATH id="juce_data_structures" path=""/>
+        <MODULEPATH id="juce_events" path=""/>
+        <MODULEPATH id="juce_graphics" path=""/>
+        <MODULEPATH id="juce_gui_basics" path=""/>
+        <MODULEPATH id="juce_gui_extra" path=""/>
+      </MODULEPATHS>
+    </VS2022>
+    <LINUX_MAKE targetFolder="Builds/LinuxMakefile">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="CHORDIN"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="CHORDIN"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_animation" path=""/>
+        <MODULEPATH id="juce_audio_basics" path=""/>
+        <MODULEPATH id="juce_audio_devices" path=""/>
+        <MODULEPATH id="juce_audio_formats" path=""/>
+        <MODULEPATH id="juce_audio_plugin_client" path=""/>
+        <MODULEPATH id="juce_audio_processors" path=""/>
+        <MODULEPATH id="juce_audio_utils" path=""/>
+        <MODULEPATH id="juce_core" path=""/>
+        <MODULEPATH id="juce_data_structures" path=""/>
+        <MODULEPATH id="juce_events" path=""/>
+        <MODULEPATH id="juce_graphics" path=""/>
+        <MODULEPATH id="juce_gui_basics" path=""/>
+        <MODULEPATH id="juce_gui_extra" path=""/>
+      </MODULEPATHS>
+    </LINUX_MAKE>
+  </EXPORTFORMATS>
+</JUCERPROJECT>
