@@ -7,64 +7,64 @@
     <GROUP id="{51630DD9-2CFB-6580-8001-5B63D88BDBE0}" name="Source">
       <GROUP id="{AudioProcessor}" name="AudioProcessor">
         <FILE id="XgNsjh" name="PluginProcessor.cpp" compile="1" resource="0"
-              file="CHORDIN/Source/AudioProcessor/PluginProcessor.cpp"/>
+              file="Source/AudioProcessor/PluginProcessor.cpp"/>
         <FILE id="C218Qs" name="PluginProcessor.h" compile="0" resource="0"
-              file="CHORDIN/Source/AudioProcessor/PluginProcessor.h"/>
+              file="Source/AudioProcessor/PluginProcessor.h"/>
       </GROUP>
       <GROUP id="{Editor}" name="Editor">
         <FILE id="AICEmv" name="PluginEditor.cpp" compile="1" resource="0"
-              file="CHORDIN/Source/Editor/PluginEditor.cpp"/>
+              file="Source/Editor/PluginEditor.cpp"/>
         <FILE id="CeQtuV" name="PluginEditor.h" compile="0" resource="0" 
-              file="CHORDIN/Source/Editor/PluginEditor.h"/>
+              file="Source/Editor/PluginEditor.h"/>
       </GROUP>
       <GROUP id="{Chord}" name="Chord">
         <FILE id="ChordDef1" name="ChordDefinitions.cpp" compile="1" resource="0"
-              file="CHORDIN/Source/Chord/ChordDefinitions.cpp"/>
+              file="Source/Chord/ChordDefinitions.cpp"/>
         <FILE id="ChordDef2" name="ChordDefinitions.h" compile="0" resource="0"
-              file="CHORDIN/Source/Chord/ChordDefinitions.h"/>
+              file="Source/Chord/ChordDefinitions.h"/>
         <FILE id="ChordSel1" name="ChordSelector.cpp" compile="1" resource="0"
-              file="CHORDIN/Source/Chord/ChordSelector.cpp"/>
+              file="Source/Chord/ChordSelector.cpp"/>
         <FILE id="ChordSel2" name="ChordSelector.h" compile="0" resource="0"
-              file="CHORDIN/Source/Chord/ChordSelector.h"/>
+              file="Source/Chord/ChordSelector.h"/>
         <FILE id="ChordPri1" name="ChordPriorities.cpp" compile="1" resource="0"
-              file="CHORDIN/Source/Chord/ChordPriorities.cpp"/>
+              file="Source/Chord/ChordPriorities.cpp"/>
         <FILE id="ChordPri2" name="ChordPriorities.h" compile="0" resource="0"
-              file="CHORDIN/Source/Chord/ChordPriorities.h"/>
+              file="Source/Chord/ChordPriorities.h"/>
         <FILE id="ChordName1" name="ChordNameUpdater.cpp" compile="1" resource="0"
-              file="CHORDIN/Source/Chord/ChordNameUpdater.cpp"/>
+              file="Source/Chord/ChordNameUpdater.cpp"/>
         <FILE id="ChordName2" name="ChordNameUpdater.h" compile="0" resource="0"
-              file="CHORDIN/Source/Chord/ChordNameUpdater.h"/>
+              file="Source/Chord/ChordNameUpdater.h"/>
         <FILE id="ChordChk1" name="ChordCheckerInitializer.cpp" compile="1" resource="0"
-              file="CHORDIN/Source/Chord/ChordCheckerInitializer.cpp"/>
+              file="Source/Chord/ChordCheckerInitializer.cpp"/>
         <FILE id="ChordChk2" name="ChordCheckerInitializer.h" compile="0" resource="0"
-              file="CHORDIN/Source/Chord/ChordCheckerInitializer.h"/>
+              file="Source/Chord/ChordCheckerInitializer.h"/>
       </GROUP>
       <GROUP id="{Handler}" name="Handler">
         <FILE id="MidiHand1" name="MidiHandler.cpp" compile="1" resource="0"
-              file="CHORDIN/Source/Handler/MidiHandler.cpp"/>
+              file="Source/Handler/MidiHandler.cpp"/>
         <FILE id="MidiHand2" name="MidiHandler.h" compile="0" resource="0"
-              file="CHORDIN/Source/Handler/MidiHandler.h"/>
+              file="Source/Handler/MidiHandler.h"/>
         <FILE id="MidiProc1" name="MidiProcessor.cpp" compile="1" resource="0"
-              file="CHORDIN/Source/Handler/MidiProcessor.cpp"/>
+              file="Source/Handler/MidiProcessor.cpp"/>
         <FILE id="MidiProc2" name="MidiProcessor.h" compile="0" resource="0"
-              file="CHORDIN/Source/Handler/MidiProcessor.h"/>
+              file="Source/Handler/MidiProcessor.h"/>
         <FILE id="ScaleHand1" name="ScaleHandler.cpp" compile="1" resource="0"
-              file="CHORDIN/Source/Handler/ScaleHandler.cpp"/>
+              file="Source/Handler/ScaleHandler.cpp"/>
         <FILE id="ScaleHand2" name="ScaleHandler.h" compile="0" resource="0"
-              file="CHORDIN/Source/Handler/ScaleHandler.h"/>
+              file="Source/Handler/ScaleHandler.h"/>
       </GROUP>
       <GROUP id="{Matchers}" name="Matchers">
         <FILE id="ChordMatch1" name="ChordMatcher.cpp" compile="1" resource="0"
-              file="CHORDIN/Source/Matchers/ChordMatcher.cpp"/>
+              file="Source/Matchers/ChordMatcher.cpp"/>
         <FILE id="ChordMatch2" name="ChordMatcher.h" compile="0" resource="0"
-              file="CHORDIN/Source/Matchers/ChordMatcher.h"/>
+              file="Source/Matchers/ChordMatcher.h"/>
       </GROUP>
     </GROUP>
     <GROUP id="{Resources}" name="ReSorce">
       <FILE id="Font1" name="Cornerstone.ttf" compile="0" resource="1"
-            file="CHORDIN/ReSorce/Cornerstone.ttf"/>
+            file="ReSorce/Cornerstone.ttf"/>
       <FILE id="Image1" name="gear.png" compile="0" resource="1"
-            file="CHORDIN/ReSorce/gear.png"/>
+            file="ReSorce/gear.png"/>
     </GROUP>
   </MAINGROUP>
   <MODULES>
