@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+
 <JUCERPROJECT id="XN2GWx" name="CHORDIN" projectType="audioplug" useAppConfig="0"
               addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1" companyName="muzicA">
   <MAINGROUP id="wdjKWz" name="CHORDIN">
