@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\VST\\vst-sdk_3.7.12_build-20_2024-07-23\\Test\\CHORDIN_PROJECT\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\VST\\vst-sdk_3.7.12_build-20_2024-07-23\\Test\\CHORDIN_PROJECT\\CHORDIN\\Source\\AudioProcessor\\PluginProcessor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CHORDIN\\Source\\AudioProcessor\\PluginProcessor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\VST\\vst-sdk_3.7.12_build-20_2024-07-23\\Test\\CHORDIN_PROJECT\\CHORDIN\\Source\\Chord\\ChordCheckerInitializer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CHORDIN\\Source\\Chord\\ChordCheckerInitializer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PluginProcessor.cpp",
+              "DocumentMoniker": "C:\\VST\\vst-sdk_3.7.12_build-20_2024-07-23\\Test\\CHORDIN_PROJECT\\CHORDIN\\Source\\AudioProcessor\\PluginProcessor.cpp",
+              "RelativeDocumentMoniker": "CHORDIN\\Source\\AudioProcessor\\PluginProcessor.cpp",
+              "ToolTip": "C:\\VST\\vst-sdk_3.7.12_build-20_2024-07-23\\Test\\CHORDIN_PROJECT\\CHORDIN\\Source\\AudioProcessor\\PluginProcessor.cpp",
+              "RelativeToolTip": "CHORDIN\\Source\\AudioProcessor\\PluginProcessor.cpp",
+              "ViewState": "AQIAAJAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-07-22T08:27:46.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ChordCheckerInitializer.cpp",
+              "DocumentMoniker": "C:\\VST\\vst-sdk_3.7.12_build-20_2024-07-23\\Test\\CHORDIN_PROJECT\\CHORDIN\\Source\\Chord\\ChordCheckerInitializer.cpp",
+              "RelativeDocumentMoniker": "CHORDIN\\Source\\Chord\\ChordCheckerInitializer.cpp",
+              "ToolTip": "C:\\VST\\vst-sdk_3.7.12_build-20_2024-07-23\\Test\\CHORDIN_PROJECT\\CHORDIN\\Source\\Chord\\ChordCheckerInitializer.cpp",
+              "RelativeToolTip": "CHORDIN\\Source\\Chord\\ChordCheckerInitializer.cpp",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAA4AAABYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-07-22T08:26:16.081Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
