@@ -1,13 +1,14 @@
+// CHORDIN ver 1.1
 #pragma once
 #include <JuceHeader.h>
 #include <algorithm>
 
-// MIDI ƒm[ƒg‘€ì‚Ìƒ†[ƒeƒBƒŠƒeƒBƒNƒ‰ƒX
+// MIDI ï¿½mï¿½[ï¿½gï¿½ï¿½ï¿½ï¿½Ìƒï¿½ï¿½[ï¿½eï¿½Bï¿½ï¿½ï¿½eï¿½Bï¿½Nï¿½ï¿½ï¿½X
 class MidiHandler
 {
 public:
-    static juce::String midiNoteNumberToNoteName(int midiNoteNumber); // ƒm[ƒg”Ô†‚ğ‰¹–¼‚É•ÏŠ·
-    static juce::String midiNoteNumberToNoteNameNoOctave(int midiNoteNumber); // ƒm[ƒg”Ô†‚ğƒIƒNƒ^[ƒu‚È‚µ‚Ì‰¹–¼‚É•ÏŠ·
-    static int getLowestNote(const juce::Array<int>& notes); // Å‚à’á‚¢ƒm[ƒg”Ô†‚ğæ“¾
-    static bool containsNote(const juce::Array<int>& activeNotes, const juce::String& noteName); // w’è‰¹–¼‚ªŠÜ‚Ü‚ê‚é‚©Šm”F
+    static juce::String midiNoteNumberToNoteName(int midiNoteNumber); // ï¿½mï¿½[ï¿½gï¿½Ôï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É•ÏŠï¿½
+    static juce::String midiNoteNumberToNoteNameNoOctave(int midiNoteNumber); // ï¿½mï¿½[ï¿½gï¿½Ôï¿½ï¿½ï¿½ï¿½Iï¿½Nï¿½^ï¿½[ï¿½uï¿½È‚ï¿½ï¿½Ì‰ï¿½ï¿½ï¿½ï¿½É•ÏŠï¿½
+    static int getLowestNote(const juce::Array<int>& notes); // ï¿½Å‚ï¿½ï¿½á‚¢ï¿½mï¿½[ï¿½gï¿½Ôï¿½ï¿½ï¿½ï¿½æ“¾
+    static bool containsNote(const juce::Array<int>& activeNotes, const juce::String& noteName); // ï¿½wï¿½è‰¹ï¿½ï¿½ï¿½ï¿½ï¿½Ü‚Ü‚ï¿½é‚©ï¿½mï¿½F
 };

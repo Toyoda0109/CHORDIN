@@ -1,0 +1,22 @@
+# JUCE generated files
+CHORDIN/Builds/
+CHORDIN/JuceLibraryCode/
+
+# Build outputs
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+
+# IDE files
+.vs/
+.vscode/
+*.user
+*.suo
+*.sdf
+
+# OS specific files
+.DS_Store
+Thumbs.db

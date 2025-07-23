@@ -1,3 +1,4 @@
+// CHORDIN ver 1.1
 #pragma once
 
 #include <JuceHeader.h>
@@ -7,7 +8,8 @@ class ChordDefinitions {
 public:
     ChordDefinitions();
 
-    // ƒR[ƒh’è‹`ƒf[ƒ^‚Ìæ“¾
+
+    // ã‚³ãƒ¼ãƒ‰å®šç¾©ãƒ‡ãƒ¼ã‚¿ã®å–å¾—
     const std::unordered_map<juce::String, juce::Array<juce::String>>& getChordDefinitions() const;
 
 private:

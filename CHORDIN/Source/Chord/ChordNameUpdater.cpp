@@ -1,3 +1,4 @@
+// CHORDIN ver 1.1
 #include "ChordNameUpdater.h"
 
 ChordNameUpdater::ChordNameUpdater(

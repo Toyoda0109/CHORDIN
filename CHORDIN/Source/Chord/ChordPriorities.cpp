@@ -2,59 +2,59 @@
 
 ChordPriorities::ChordPriorities() {
     chordPriorities = {
-        // Faug‚ªÅ‚à•p”É‚Éo‚éƒL[
-        { "F Major",   { {"Faug", 1}, {"Aaug", 3}, {"C#aug", 2} } },  // Faug‚ÍIaug‚Æ‚µ‚Ä•sˆÀ’è‚³‚ğ‹­’²‚µAC7‚ÉŒü‚©‚¤€”õ˜a‰¹‚Æ‚µ‚Äd—v
-        { "C Major",   { {"Faug", 1}, {"Aaug", 2}, {"C#aug", 3} } },  // Faug‚ÍIVaug‚Æ‚µ‚ÄV‚Éis‚·‚é‘O‚Éƒeƒ“ƒVƒ‡ƒ“‚ğ‚½‚¹‚é
-        { "A Minor",   { {"Faug", 1}, {"Aaug", 2}, {"C#aug", 3} } },  // Faug‚ÍVIaug‚Æ‚µ‚ÄE7‚Éis‚·‚éÛ‚É•sˆÀ’èŠ´‚ğ¶‚Ş
-        { "D Minor",   { {"Faug", 1}, {"Aaug", 2}, {"C#aug", 3} } },  // Faug‚ÍVIaug‚Æ‚µ‚ÄA7‚Éi‚ŞÛ‚Éƒeƒ“ƒVƒ‡ƒ“‚ğì‚é
+        // FaugãŒæœ€ã‚‚é »ç¹ã«å‡ºã‚‹ã‚­ãƒ¼
+        { "F Major",   { {"Faug", 1}, {"Aaug", 3}, {"C#aug", 2} } },  // Faugã¯Iaugã¨ã—ã¦ä¸å®‰å®šã•ã‚’å¼·èª¿ã—ã€C7ã«å‘ã‹ã†æº–å‚™å’ŒéŸ³ã¨ã—ã¦é‡è¦
+        { "C Major",   { {"Faug", 1}, {"Aaug", 2}, {"C#aug", 3} } },  // Faugã¯IVaugã¨ã—ã¦Vã«é€²è¡Œã™ã‚‹å‰ã«ãƒ†ãƒ³ã‚·ãƒ§ãƒ³ã‚’æŒãŸã›ã‚‹
+        { "A Minor",   { {"Faug", 1}, {"Aaug", 2}, {"C#aug", 3} } },  // Faugã¯VIaugã¨ã—ã¦E7ã«é€²è¡Œã™ã‚‹éš›ã«ä¸å®‰å®šæ„Ÿã‚’ç”Ÿã‚€
+        { "D Minor",   { {"Faug", 1}, {"Aaug", 2}, {"C#aug", 3} } },  // Faugã¯VIaugã¨ã—ã¦A7ã«é€²ã‚€éš›ã«ãƒ†ãƒ³ã‚·ãƒ§ãƒ³ã‚’ä½œã‚‹
 
-        // C#aug‚ªÅ‚à•p”É‚Éo‚éƒL[
-        { "A Major",   { {"C#aug", 1}, {"Aaug", 2}, {"Faug", 3} } },  // C#aug‚ÍIII“x‚Ìd—v‚È•ÏŒ`˜a‰¹
-        { "E Major",   { {"C#aug", 1}, {"Aaug", 2}, {"Faug", 3} } },  // “¯‚¶‚­III“x‚Æ‚µ‚Äd—v
-        { "C# Major",  { {"C#aug", 1}, {"Aaug", 3}, {"Faug", 2} } },  // C#aug‚Í©‘R‚ÉŠÜ‚Ü‚ê‚é
-        { "G# Minor",  { {"C#aug", 1}, {"Aaug", 3}, {"Faug", 2} } },  // “¯—l‚ÉIII“x‚Æ‚µ‚Äd—v
+        // C#augãŒæœ€ã‚‚é »ç¹ã«å‡ºã‚‹ã‚­ãƒ¼
+        { "A Major",   { {"C#aug", 1}, {"Aaug", 2}, {"Faug", 3} } },  // C#augã¯IIIåº¦ã®é‡è¦ãªå¤‰å½¢å’ŒéŸ³
+        { "E Major",   { {"C#aug", 1}, {"Aaug", 2}, {"Faug", 3} } },  // åŒã˜ãIIIåº¦ã¨ã—ã¦é‡è¦
+        { "C# Major",  { {"C#aug", 1}, {"Aaug", 3}, {"Faug", 2} } },  // C#augã¯è‡ªç„¶ã«å«ã¾ã‚Œã‚‹
+        { "G# Minor",  { {"C#aug", 1}, {"Aaug", 3}, {"Faug", 2} } },  // åŒæ§˜ã«IIIåº¦ã¨ã—ã¦é‡è¦
 
-        // Aaug‚ªÅ‚à•p”É‚Éo‚éƒL[
-        { "C# Minor",  { {"Aaug", 1}, {"C#aug", 2}, {"Faug", 3} } },  // Aaug‚ÍV“x‚Ì‘ã—‚ÅoŒ»
-        { "D Major",   { {"Aaug", 1}, {"Faug", 2},  {"C#aug", 3} } },  // III“x‚Æ‚µ‚ÄAaug‚ªd—v
+        // AaugãŒæœ€ã‚‚é »ç¹ã«å‡ºã‚‹ã‚­ãƒ¼
+        { "C# Minor",  { {"Aaug", 1}, {"C#aug", 2}, {"Faug", 3} } },  // Aaugã¯Våº¦ã®ä»£ç†ã§å‡ºç¾
+        { "D Major",   { {"Aaug", 1}, {"Faug", 2},  {"C#aug", 3} } },  // IIIåº¦ã¨ã—ã¦AaugãŒé‡è¦
 
-        // Caug‚ÉŠÖ˜A‚·‚é—Dæ‡ˆÊ
-        { "C Major", { {"Caug", 1}, {"Eaug", 2}, {"G#aug", 3} } }, // CƒƒWƒƒ[‚ÌƒgƒjƒbƒN‚Æ‚µ‚ÄCaug‚ğ—Dæ
-        { "G Major", { {"Caug", 1}, {"Eaug", 2}, {"G#aug", 3} } }, // Caug‚ÍGƒƒWƒƒ[‚ÌƒTƒuƒhƒ~ƒiƒ“ƒgiIVaugj
-        { "F Major", { {"Caug", 1}, {"Eaug", 2}, {"G#aug", 3} } }, // Caug‚ÍFƒƒWƒƒ[‚Ìƒhƒ~ƒiƒ“ƒgiVaugj
+        // Caugã«é–¢é€£ã™ã‚‹å„ªå…ˆé †ä½
+        { "C Major", { {"Caug", 1}, {"Eaug", 2}, {"G#aug", 3} } }, // Cãƒ¡ã‚¸ãƒ£ãƒ¼ã®ãƒˆãƒ‹ãƒƒã‚¯ã¨ã—ã¦Caugã‚’å„ªå…ˆ
+        { "G Major", { {"Caug", 1}, {"Eaug", 2}, {"G#aug", 3} } }, // Caugã¯Gãƒ¡ã‚¸ãƒ£ãƒ¼ã®ã‚µãƒ–ãƒ‰ãƒŸãƒŠãƒ³ãƒˆï¼ˆIVaugï¼‰
+        { "F Major", { {"Caug", 1}, {"Eaug", 2}, {"G#aug", 3} } }, // Caugã¯Fãƒ¡ã‚¸ãƒ£ãƒ¼ã®ãƒ‰ãƒŸãƒŠãƒ³ãƒˆï¼ˆVaugï¼‰
 
-        // EƒƒWƒƒ[AAƒ}ƒCƒi[‚Å‚ÍEaug‚ğ—Dæ
-        { "E Major", { {"Eaug", 1}, {"Caug", 2}, {"G#aug", 3} } }, // Eaug‚ÍEƒƒWƒƒ[‚ÌƒgƒjƒbƒN‚Æ‚µ‚Ä—Dæ
-        { "A Minor", { {"Eaug", 1}, {"Caug", 2}, {"G#aug", 3} } }, // Eaug‚ÍAƒ}ƒCƒi[‚Ìƒhƒ~ƒiƒ“ƒgiVaugj
+        // Eãƒ¡ã‚¸ãƒ£ãƒ¼ã€Aãƒã‚¤ãƒŠãƒ¼ã§ã¯Eaugã‚’å„ªå…ˆ
+        { "E Major", { {"Eaug", 1}, {"Caug", 2}, {"G#aug", 3} } }, // Eaugã¯Eãƒ¡ã‚¸ãƒ£ãƒ¼ã®ãƒˆãƒ‹ãƒƒã‚¯ã¨ã—ã¦å„ªå…ˆ
+        { "A Minor", { {"Eaug", 1}, {"Caug", 2}, {"G#aug", 3} } }, // Eaugã¯Aãƒã‚¤ãƒŠãƒ¼ã®ãƒ‰ãƒŸãƒŠãƒ³ãƒˆï¼ˆVaugï¼‰
 
-        // G#ƒ}ƒCƒi[AC#ƒƒWƒƒ[‚Å‚ÍG#aug‚ğ—Dæ
-        { "G# Minor", { {"G#aug", 1}, {"Caug", 2}, {"Eaug", 3} } }, // G#aug‚ÍG#ƒ}ƒCƒi[‚ÌƒgƒjƒbƒN‚Æ‚µ‚Ä—Dæ
-        { "C# Major", { {"G#aug", 1}, {"Caug", 2}, {"Eaug", 3} } },  // G#aug‚ÍC#ƒƒWƒƒ[‚ÌƒTƒuƒhƒ~ƒiƒ“ƒgiIVaugj
+        // G#ãƒã‚¤ãƒŠãƒ¼ã€C#ãƒ¡ã‚¸ãƒ£ãƒ¼ã§ã¯G#augã‚’å„ªå…ˆ
+        { "G# Minor", { {"G#aug", 1}, {"Caug", 2}, {"Eaug", 3} } }, // G#augã¯G#ãƒã‚¤ãƒŠãƒ¼ã®ãƒˆãƒ‹ãƒƒã‚¯ã¨ã—ã¦å„ªå…ˆ
+        { "C# Major", { {"G#aug", 1}, {"Caug", 2}, {"Eaug", 3} } },  // G#augã¯C#ãƒ¡ã‚¸ãƒ£ãƒ¼ã®ã‚µãƒ–ãƒ‰ãƒŸãƒŠãƒ³ãƒˆï¼ˆIVaugï¼‰
 
-        // DƒƒWƒƒ[AGƒƒWƒƒ[AAƒƒWƒƒ[‚Å‚ÍDaug‚ğ—Dæ
-        { "D Major", { {"Daug", 1}, {"F#aug", 2}, {"A#aug", 3} } }, // Daug‚ÍDƒƒWƒƒ[‚ÌƒgƒjƒbƒN‚Æ‚µ‚Ä—Dæ
-        { "G Major", { {"Daug", 1}, {"F#aug", 2}, {"A#aug", 3} } }, // Daug‚ÍGƒƒWƒƒ[‚Ìƒhƒ~ƒiƒ“ƒgiVaugj
-        { "A Major", { {"Daug", 1}, {"F#aug", 2}, {"A#aug", 3} } }, // Daug‚ÍAƒƒWƒƒ[‚ÌƒTƒuƒhƒ~ƒiƒ“ƒgiIVaugj
+        // Dãƒ¡ã‚¸ãƒ£ãƒ¼ã€Gãƒ¡ã‚¸ãƒ£ãƒ¼ã€Aãƒ¡ã‚¸ãƒ£ãƒ¼ã§ã¯Daugã‚’å„ªå…ˆ
+        { "D Major", { {"Daug", 1}, {"F#aug", 2}, {"A#aug", 3} } }, // Daugã¯Dãƒ¡ã‚¸ãƒ£ãƒ¼ã®ãƒˆãƒ‹ãƒƒã‚¯ã¨ã—ã¦å„ªå…ˆ
+        { "G Major", { {"Daug", 1}, {"F#aug", 2}, {"A#aug", 3} } }, // Daugã¯Gãƒ¡ã‚¸ãƒ£ãƒ¼ã®ãƒ‰ãƒŸãƒŠãƒ³ãƒˆï¼ˆVaugï¼‰
+        { "A Major", { {"Daug", 1}, {"F#aug", 2}, {"A#aug", 3} } }, // Daugã¯Aãƒ¡ã‚¸ãƒ£ãƒ¼ã®ã‚µãƒ–ãƒ‰ãƒŸãƒŠãƒ³ãƒˆï¼ˆIVaugï¼‰
 
-        // F#ƒƒWƒƒ[ABƒ}ƒCƒi[‚Å‚ÍF#aug‚ğ—Dæ
-        { "F# Major", { {"F#aug", 1}, {"Daug", 2}, {"A#aug", 3} } }, // F#aug‚ÍF#ƒƒWƒƒ[‚ÌƒgƒjƒbƒN‚Æ‚µ‚Ä—Dæ
-        { "B Minor", { {"F#aug", 1}, {"Daug", 2}, {"A#aug", 3} } },  // F#aug‚ÍBƒ}ƒCƒi[‚Ìƒhƒ~ƒiƒ“ƒgiVaugj
+        // F#ãƒ¡ã‚¸ãƒ£ãƒ¼ã€Bãƒã‚¤ãƒŠãƒ¼ã§ã¯F#augã‚’å„ªå…ˆ
+        { "F# Major", { {"F#aug", 1}, {"Daug", 2}, {"A#aug", 3} } }, // F#augã¯F#ãƒ¡ã‚¸ãƒ£ãƒ¼ã®ãƒˆãƒ‹ãƒƒã‚¯ã¨ã—ã¦å„ªå…ˆ
+        { "B Minor", { {"F#aug", 1}, {"Daug", 2}, {"A#aug", 3} } },  // F#augã¯Bãƒã‚¤ãƒŠãƒ¼ã®ãƒ‰ãƒŸãƒŠãƒ³ãƒˆï¼ˆVaugï¼‰
 
-        // A#ƒƒWƒƒ[AD#ƒ}ƒCƒi[‚Å‚ÍA#aug‚ğ—Dæ
-        { "A# Major", { {"A#aug", 1}, {"Daug", 2}, {"F#aug", 3} } }, // A#aug‚ÍA#ƒƒWƒƒ[‚ÌƒgƒjƒbƒN‚Æ‚µ‚Ä—Dæ
-        { "D# Minor", { {"A#aug", 1}, {"Daug", 2}, {"F#aug", 3} } },  // A#aug‚ÍD#ƒ}ƒCƒi[‚Ìƒhƒ~ƒiƒ“ƒgiVaugj
+        // A#ãƒ¡ã‚¸ãƒ£ãƒ¼ã€D#ãƒã‚¤ãƒŠãƒ¼ã§ã¯A#augã‚’å„ªå…ˆ
+        { "A# Major", { {"A#aug", 1}, {"Daug", 2}, {"F#aug", 3} } }, // A#augã¯A#ãƒ¡ã‚¸ãƒ£ãƒ¼ã®ãƒˆãƒ‹ãƒƒã‚¯ã¨ã—ã¦å„ªå…ˆ
+        { "D# Minor", { {"A#aug", 1}, {"Daug", 2}, {"F#aug", 3} } },  // A#augã¯D#ãƒã‚¤ãƒŠãƒ¼ã®ãƒ‰ãƒŸãƒŠãƒ³ãƒˆï¼ˆVaugï¼‰
 
-        // D#aug‚ÉŠÖ‚·‚é—Dæ‡ˆÊ
-        { "D# Major",  { {"D#aug", 1}, {"Baug", 2}, {"Gaug", 3} } },  // D#aug‚ÍƒgƒjƒbƒN‚Æ‚µ‚ÄÅ‚àd—v
-        { "G Minor",   { {"D#aug", 1}, {"Baug", 2}, {"Gaug", 3} } },  // D#aug‚ÍV“x‚Ì•ÏŒ`‚Æ‚µ‚Ä“oê
+        // D#augã«é–¢ã™ã‚‹å„ªå…ˆé †ä½
+        { "D# Major",  { {"D#aug", 1}, {"Baug", 2}, {"Gaug", 3} } },  // D#augã¯ãƒˆãƒ‹ãƒƒã‚¯ã¨ã—ã¦æœ€ã‚‚é‡è¦
+        { "G Minor",   { {"D#aug", 1}, {"Baug", 2}, {"Gaug", 3} } },  // D#augã¯Våº¦ã®å¤‰å½¢ã¨ã—ã¦ç™»å ´
 
-        // Gaug‚ªÅ‚à•p”É‚Éo‚éƒL[
-        { "G Major",   { {"Gaug", 1}, {"D#aug", 2}, {"Baug", 3} } },  // Gaug‚ÍƒgƒjƒbƒN‚Æ‚µ‚Äd—v
-        { "C Major",   { {"Gaug", 1}, {"Baug", 2}, {"D#aug", 3} } },  // Gaug‚ÍV“x‚Æ‚µ‚Äd—v
+        // GaugãŒæœ€ã‚‚é »ç¹ã«å‡ºã‚‹ã‚­ãƒ¼
+        { "G Major",   { {"Gaug", 1}, {"D#aug", 2}, {"Baug", 3} } },  // Gaugã¯ãƒˆãƒ‹ãƒƒã‚¯ã¨ã—ã¦é‡è¦
+        { "C Major",   { {"Gaug", 1}, {"Baug", 2}, {"D#aug", 3} } },  // Gaugã¯Våº¦ã¨ã—ã¦é‡è¦
 
-        // Baug‚ªÅ‚à•p”É‚Éo‚éƒL[
-        { "B Major",   { {"Baug", 1}, {"D#aug", 2}, {"Gaug", 3} } },  // Baug‚ÍƒgƒjƒbƒN‚Æ‚µ‚ÄÅ‚àd—v
-        { "E Minor",   { {"Baug", 1}, {"D#aug", 2}, {"Gaug", 3} } }   // Baug‚ÍV“x‚Æ‚µ‚Äd—v
+        // BaugãŒæœ€ã‚‚é »ç¹ã«å‡ºã‚‹ã‚­ãƒ¼
+        { "B Major",   { {"Baug", 1}, {"D#aug", 2}, {"Gaug", 3} } },  // Baugã¯ãƒˆãƒ‹ãƒƒã‚¯ã¨ã—ã¦æœ€ã‚‚é‡è¦
+        { "E Minor",   { {"Baug", 1}, {"D#aug", 2}, {"Gaug", 3} } }   // Baugã¯Våº¦ã¨ã—ã¦é‡è¦
     };
 }
 

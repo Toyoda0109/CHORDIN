@@ -1,7 +1,8 @@
+// CHORDIN ver 1.1
 #include "ChordCheckerInitializer.h"
 
 //==============================================================================
-// ƒR[ƒh’è‹`‚Æˆê’vŠm”FƒR[ƒ‹ƒoƒbƒN‚ğó‚¯æ‚è‰Šú‰»‚ğÀs
+// ã‚³ãƒ¼ãƒ‰å®šç¾©ã¨ä¸€è‡´ç¢ºèªã‚³ãƒ¼ãƒ«ãƒãƒƒã‚¯ã‚’å—ã‘å–ã‚ŠåˆæœŸåŒ–ã‚’å®Ÿè¡Œ
 ChordCheckerInitializer::ChordCheckerInitializer(
     const std::unordered_map<juce::String, juce::Array<juce::String>>& chordDefinitions,
     const std::function<bool(const juce::Array<juce::String>&)>& isChordMatch)
@@ -10,14 +11,14 @@ ChordCheckerInitializer::ChordCheckerInitializer(
 }
 
 //==============================================================================
-// ŠeƒR[ƒh–¼‚É‘Î‰‚·‚éƒ`ƒFƒbƒJ[ŠÖ”‚ğì¬‚µAchordCheckers ‚ÉŠi”[
+// å„ã‚³ãƒ¼ãƒ‰åã«å¯¾å¿œã™ã‚‹ãƒã‚§ãƒƒã‚«ãƒ¼é–¢æ•°ã‚’ä½œæˆã—ã€chordCheckers ã«æ ¼ç´
 void ChordCheckerInitializer::initializeCheckers(
     const std::unordered_map<juce::String, juce::Array<juce::String>>& chordDefinitions,
     const std::function<bool(const juce::Array<juce::String>&)>& isChordMatch)
 {
     for (const auto& [chordName, expectedNotes] : chordDefinitions)
     {
-        // ŠeƒR[ƒh–¼‚É‘Î‰‚·‚éƒ`ƒFƒbƒJ[‚ğİ’è
+        // å„ã‚³ãƒ¼ãƒ‰åã«å¯¾å¿œã™ã‚‹ãƒã‚§ãƒƒã‚«ãƒ¼ã‚’è¨­å®š
         chordCheckers[chordName] = [expectedNotes, &isChordMatch] {
             return isChordMatch(expectedNotes);
             };
@@ -25,7 +26,7 @@ void ChordCheckerInitializer::initializeCheckers(
 }
 
 //==============================================================================
-// ‰Šú‰»Ï‚İ‚ÌƒR[ƒhƒ`ƒFƒbƒJ[‚ğ•Ô‚·
+// åˆæœŸåŒ–æ¸ˆã¿ã®ã‚³ãƒ¼ãƒ‰ãƒã‚§ãƒƒã‚«ãƒ¼ã‚’è¿”ã™
 const std::unordered_map<juce::String, std::function<bool()>>& ChordCheckerInitializer::getChordCheckers() const
 {
     return chordCheckers;

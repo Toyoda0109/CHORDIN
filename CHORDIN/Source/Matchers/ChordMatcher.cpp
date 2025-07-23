@@ -1,3 +1,4 @@
+// CHORDIN ver 1.1
 #include "ChordMatcher.h"
 #include "../Handler/MidiHandler.h"
 
@@ -7,7 +8,7 @@ void ChordMatcher::initialize(
     const std::function<bool(const juce::Array<juce::String>&)>& chordMatchCallback)
 {
     for (const auto& [chordName, expectedNotes] : chordDefinitions) {
-        // ƒR[ƒh–¼‚É‘Î‚·‚éˆê’v”»’èƒƒWƒbƒN‚ğ“o˜^
+        // ï¿½Rï¿½[ï¿½hï¿½ï¿½ï¿½É‘Î‚ï¿½ï¿½ï¿½ï¿½vï¿½ï¿½ï¿½èƒï¿½Wï¿½bï¿½Nï¿½ï¿½oï¿½^
         chordCheckers[chordName] = [expectedNotes, chordMatchCallback]() {
             return chordMatchCallback(expectedNotes);
             };
@@ -15,7 +16,7 @@ void ChordMatcher::initialize(
 }
 
 //==============================================================================
-// Œ»İ‚Ìƒm[ƒgƒXƒiƒbƒvƒVƒ‡ƒbƒg‚Éˆê’v‚·‚éƒR[ƒh‚ğæ“¾
+// ï¿½ï¿½ï¿½İ‚Ìƒmï¿½[ï¿½gï¿½Xï¿½iï¿½bï¿½vï¿½Vï¿½ï¿½ï¿½bï¿½gï¿½Éˆï¿½vï¿½ï¿½ï¿½ï¿½Rï¿½[ï¿½hï¿½ï¿½ï¿½æ“¾
 juce::String ChordMatcher::matchChord(const juce::Array<int>& notesSnapshot)
 {
     for (const auto& [chordName, checker] : chordCheckers) {
@@ -27,16 +28,16 @@ juce::String ChordMatcher::matchChord(const juce::Array<int>& notesSnapshot)
 }
 
 //==============================================================================
-// w’è‚³‚ê‚½ƒm[ƒg‚ªƒR[ƒh‚Éˆê’v‚·‚é‚©”»’è
+// ï¿½wï¿½è‚³ï¿½ê‚½ï¿½mï¿½[ï¿½gï¿½ï¿½ï¿½Rï¿½[ï¿½hï¿½Éˆï¿½vï¿½ï¿½ï¿½é‚©ï¿½ï¿½ï¿½ï¿½
 bool ChordMatcher::isChordMatch(const juce::Array<juce::String>& expectedNotes, const juce::Array<int>& activeNotes)
 {
-    // •K—v‚Èƒm[ƒg‚ª‚·‚×‚ÄƒAƒNƒeƒBƒuƒm[ƒg‚ÉŠÜ‚Ü‚ê‚Ä‚¢‚é‚©Šm”F
+    // ï¿½Kï¿½vï¿½Èƒmï¿½[ï¿½gï¿½ï¿½ï¿½ï¿½ï¿½×‚ÄƒAï¿½Nï¿½eï¿½Bï¿½uï¿½mï¿½[ï¿½gï¿½ÉŠÜ‚Ü‚ï¿½Ä‚ï¿½ï¿½é‚©ï¿½mï¿½F
     for (const auto& note : expectedNotes) {
         if (!MidiHandler::containsNote(activeNotes, note))
             return false;
     }
 
-    // ƒAƒNƒeƒBƒuƒm[ƒg‚ª—]Œv‚Èƒm[ƒg‚ğŠÜ‚ñ‚Å‚¢‚È‚¢‚©Šm”F
+    // ï¿½Aï¿½Nï¿½eï¿½Bï¿½uï¿½mï¿½[ï¿½gï¿½ï¿½ï¿½]ï¿½vï¿½Èƒmï¿½[ï¿½gï¿½ï¿½ï¿½Ü‚ï¿½Å‚ï¿½ï¿½È‚ï¿½ï¿½ï¿½ï¿½mï¿½F
     for (int note : activeNotes) {
         juce::String noteName = MidiHandler::midiNoteNumberToNoteNameNoOctave(note);
         if (!expectedNotes.contains(noteName))
@@ -47,12 +48,12 @@ bool ChordMatcher::isChordMatch(const juce::Array<juce::String>& expectedNotes, 
 }
 
 //==============================================================================
-// Œ»İ‚Ìƒm[ƒgƒXƒiƒbƒvƒVƒ‡ƒbƒg‚ğŠî‚ÉƒR[ƒh–¼‚ğXV
+// ï¿½ï¿½ï¿½İ‚Ìƒmï¿½[ï¿½gï¿½Xï¿½iï¿½bï¿½vï¿½Vï¿½ï¿½ï¿½bï¿½gï¿½ï¿½ï¿½ï¿½ÉƒRï¿½[ï¿½hï¿½ï¿½ï¿½ï¿½ï¿½Xï¿½V
 juce::String ChordMatcher::updateChord(const juce::Array<int>& notesSnapshot)
 {
     juce::String selectedChord = matchChord(notesSnapshot);
     if (!selectedChord.isEmpty()) {
-        int lowestNote = MidiHandler::getLowestNote(notesSnapshot); // Å‚à’á‚¢ƒm[ƒg‚ğæ“¾
+        int lowestNote = MidiHandler::getLowestNote(notesSnapshot); // ï¿½Å‚ï¿½ï¿½á‚¢ï¿½mï¿½[ï¿½gï¿½ï¿½ï¿½æ“¾
         juce::String lowestNoteName = MidiHandler::midiNoteNumberToNoteNameNoOctave(lowestNote);
         return selectedChord + "/" + lowestNoteName;
     }

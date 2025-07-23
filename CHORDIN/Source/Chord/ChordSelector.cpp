@@ -1,3 +1,4 @@
+// CHORDIN ver 1.1
 #include "ChordSelector.h"
 
 ChordSelector::ChordSelector(const std::unordered_map<juce::String, std::unordered_map<juce::String, int>>& chordPriorities,
@@ -18,7 +19,7 @@ int ChordSelector::getChordPriority(const juce::String& chordName) const
             return chordIt->second;
         }
     }
-    return defaultPriority; // �D�揇�ʂ�������Ȃ��ꍇ�̓f�t�H���g�l��Ԃ�
+    return defaultPriority; // 優先順位が見つからない場合はデフォルト値を返す
 }
 
 void ChordSelector::updateScale(const juce::String& newScale)

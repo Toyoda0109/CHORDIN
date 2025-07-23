@@ -1,27 +1,28 @@
+// CHORDIN ver 1.1
 #include "MidiHandler.h"
 
 //==============================================================================
-// ƒm[ƒg”Ô†‚ğ‰¹–¼ (ƒIƒNƒ^[ƒu‚È‚µ) ‚É•ÏŠ·
+// ï¿½mï¿½[ï¿½gï¿½Ôï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ (ï¿½Iï¿½Nï¿½^ï¿½[ï¿½uï¿½È‚ï¿½) ï¿½É•ÏŠï¿½
 juce::String MidiHandler::midiNoteNumberToNoteNameNoOctave(int midiNoteNumber) {
     static const juce::StringArray noteNames = { "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B" };
     return noteNames[midiNoteNumber % 12];
 }
 
 //==============================================================================
-// ƒm[ƒg”Ô†‚ğ‰¹–¼ (ƒIƒNƒ^[ƒu•t‚«) ‚É•ÏŠ·
+// ï¿½mï¿½[ï¿½gï¿½Ôï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ (ï¿½Iï¿½Nï¿½^ï¿½[ï¿½uï¿½tï¿½ï¿½) ï¿½É•ÏŠï¿½
 juce::String MidiHandler::midiNoteNumberToNoteName(int midiNoteNumber) {
-    int octave = (midiNoteNumber / 12) - 1; // ƒIƒNƒ^[ƒu‚ğŒvZ
+    int octave = (midiNoteNumber / 12) - 1; // ï¿½Iï¿½Nï¿½^ï¿½[ï¿½uï¿½ï¿½ï¿½vï¿½Z
     return midiNoteNumberToNoteNameNoOctave(midiNoteNumber) + juce::String(octave);
 }
 
 //==============================================================================
-// ”z—ñ“à‚ÌÅ‚à’á‚¢ƒm[ƒg”Ô†‚ğæ“¾
+// ï¿½zï¿½ï¿½ï¿½ï¿½ÌÅ‚ï¿½ï¿½á‚¢ï¿½mï¿½[ï¿½gï¿½Ôï¿½ï¿½ï¿½ï¿½æ“¾
 int MidiHandler::getLowestNote(const juce::Array<int>& notes) {
     return notes.isEmpty() ? -1 : *std::min_element(notes.begin(), notes.end());
 }
 
 //==============================================================================
-// w’è‚µ‚½‰¹–¼‚ª”z—ñ“à‚É‘¶İ‚·‚é‚©Šm”F
+// ï¿½wï¿½è‚µï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½zï¿½ï¿½ï¿½ï¿½É‘ï¿½ï¿½İ‚ï¿½ï¿½é‚©ï¿½mï¿½F
 bool MidiHandler::containsNote(const juce::Array<int>& activeNotes, const juce::String& noteName) {
     return std::any_of(activeNotes.begin(), activeNotes.end(),
         [&noteName](int note) {

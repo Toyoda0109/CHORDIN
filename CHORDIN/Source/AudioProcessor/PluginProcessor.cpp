@@ -1,3 +1,4 @@
+// CHORDIN ver 1.1
 #include "PluginProcessor.h"
 #include "../Editor/PluginEditor.h"
 #include "../Handler/MidiHandler.h"

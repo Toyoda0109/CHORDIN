@@ -1,3 +1,4 @@
+// CHORDIN ver 1.1
 #include "PluginEditor.h"
 #include "BinaryData.h"
 #include "../Handler/MidiHandler.h"

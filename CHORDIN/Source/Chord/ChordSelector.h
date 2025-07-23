@@ -1,3 +1,4 @@
+// CHORDIN ver 1.1
 #pragma once
 
 #include <JuceHeader.h>
@@ -6,19 +7,19 @@
 class ChordSelector
 {
 public:
-    // ƒRƒ“ƒXƒgƒ‰ƒNƒ^
+    // ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
     ChordSelector(const std::unordered_map<juce::String, std::unordered_map<juce::String, int>>& chordPriorities,
         const juce::String& initialScale);
 
-    // —Dæ‡ˆÊ‚ğæ“¾
+    // å„ªå…ˆé †ä½ã‚’å–å¾—
     int getChordPriority(const juce::String& chordName) const;
 
-    // ƒXƒP[ƒ‹‚ğXV
+    // ã‚¹ã‚±ãƒ¼ãƒ«ã‚’æ›´æ–°
     void updateScale(const juce::String& newScale);
 
 private:
     const std::unordered_map<juce::String, std::unordered_map<juce::String, int>>& chordPriorities;
     juce::String currentScale;
 
-    static constexpr int defaultPriority = 0; // —Dæ‡ˆÊ‚ªŒ©‚Â‚©‚ç‚È‚¢ê‡‚ÌƒfƒtƒHƒ‹ƒg’l
+    static constexpr int defaultPriority = 0; // å„ªå…ˆé †ä½ãŒè¦‹ã¤ã‹ã‚‰ãªã„å ´åˆã®ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆå€¤
 };

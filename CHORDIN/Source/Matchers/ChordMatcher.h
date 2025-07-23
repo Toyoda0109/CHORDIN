@@ -1,3 +1,4 @@
+// CHORDIN ver 1.1
 #pragma once
 
 #include <JuceHeader.h>
@@ -5,21 +6,21 @@
 #include <functional>
 
 //==============================================================================
-// ƒR[ƒhi˜a‰¹j‚Ìˆê’v”»’è‚ÆŠÇ—‚ğs‚¤ƒNƒ‰ƒX
+// ï¿½Rï¿½[ï¿½hï¿½iï¿½aï¿½ï¿½ï¿½jï¿½Ìˆï¿½vï¿½ï¿½ï¿½ï¿½ÆŠÇ—ï¿½ï¿½ï¿½ï¿½sï¿½ï¿½ï¿½Nï¿½ï¿½ï¿½X
 class ChordMatcher {
 public:
-    // ƒR[ƒhƒ`ƒFƒbƒJ[‚ğ‰Šú‰»
+    // ï¿½Rï¿½[ï¿½hï¿½`ï¿½Fï¿½bï¿½Jï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     void initialize(
         const std::unordered_map<juce::String, juce::Array<juce::String>>& chordDefinitions,
         const std::function<bool(const juce::Array<juce::String>&)>& chordMatchCallback);
 
-    // Œ»İ‚Ìƒm[ƒgƒXƒiƒbƒvƒVƒ‡ƒbƒg‚©‚çˆê’v‚·‚éƒR[ƒh‚ğæ“¾
+    // ï¿½ï¿½ï¿½İ‚Ìƒmï¿½[ï¿½gï¿½Xï¿½iï¿½bï¿½vï¿½Vï¿½ï¿½ï¿½bï¿½gï¿½ï¿½ï¿½ï¿½ï¿½vï¿½ï¿½ï¿½ï¿½Rï¿½[ï¿½hï¿½ï¿½ï¿½æ“¾
     juce::String matchChord(const juce::Array<int>& notesSnapshot);
 
-    // Œ»İ‚Ìƒm[ƒgƒXƒiƒbƒvƒVƒ‡ƒbƒg‚ğŠî‚ÉƒR[ƒh–¼‚ğXV
+    // ï¿½ï¿½ï¿½İ‚Ìƒmï¿½[ï¿½gï¿½Xï¿½iï¿½bï¿½vï¿½Vï¿½ï¿½ï¿½bï¿½gï¿½ï¿½ï¿½ï¿½ÉƒRï¿½[ï¿½hï¿½ï¿½ï¿½ï¿½ï¿½Xï¿½V
     juce::String updateChord(const juce::Array<int>& notesSnapshot);
 
-    // w’è‚³‚ê‚½ƒm[ƒg‚ªƒR[ƒh‚Éˆê’v‚·‚é‚©‚ğ”»’è
+    // ï¿½wï¿½è‚³ï¿½ê‚½ï¿½mï¿½[ï¿½gï¿½ï¿½ï¿½Rï¿½[ï¿½hï¿½Éˆï¿½vï¿½ï¿½ï¿½é‚©ï¿½ğ”»’ï¿½
     bool isChordMatch(const juce::Array<juce::String>& expectedNotes, const juce::Array<int>& activeNotes);
 
 private:
